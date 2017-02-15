@@ -4,54 +4,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Vue.js tutorial</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
   </head>
-  <body class="container">
+  <body>
 
-    <div class="jumbotron">
-      <h1>Hello, fish vue! <i class="fa fa-apple"></i></h1>
-      <div id="app">
-        {{ message }}
+    <div class="container">
+
+      <div class="jumbotron">
+        <h1>Hello, fish vue! <i class="fa fa-apple"></i></h1>
       </div>
-      <div id="app2">
-        <ul>
-          <h5>Todos</h5>
-          <li v-for="t in todos">
-            {{ t.text }}
-          </li>
-        </ul>
-        <ul>
-          <h5>Numbers</h5>
-          <li v-for="n in numbers">
-            {{ n }}
-          </li>
-        </ul>
-      </div>
-      <div id="app3">
-        <ul>
-          <h5>All Fish</h5>
-          <li v-for="f in fishies">
-            {{ f.type }}
-          </li>
-        </ul>
-        <ul>
-          <h5>Pacifc Fish</h5>
-          <li v-for="p in pacificFish">
-            {{ p.type }}
-          </li>
-        </ul>
-        <ul>
-          <h5>Caribbean Fish</h5>
-          <li v-for="c in caribbeanFish">
-            {{ c.type }}
-          </li>
-        </ul>
-      </div>
+ 
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -18,7 +18,29 @@
       <div class="jumbotron">
         <h1>Hello, fish vue! <i class="fa fa-apple"></i></h1>
       </div>
- 
+      <div id="app1">
+        {{message}}
+        <br />
+        {{greeting}}
+      </div>
+      <div id="app2">
+        <h3  v-if="show" id="myHead">Does this heading show.</h3>
+        <button class='btn btn-primary' id="showBtn" v-on:click="show = show? false: true">Toggle Heading</button>
+      </div>
+      <div id="app3">
+        <ul v-for="t in todos">
+          <li>{{t.text}}</li>
+        </ul>
+      </div>
+      <div id="app4">
+        <div v-for="fishList in fishData">
+          <h3>{{fishList.title}}</h3>
+          <ul v-for="fish in fishList.data">
+            <li>{{fish.type}}</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

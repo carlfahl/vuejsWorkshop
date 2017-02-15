@@ -75,3 +75,15 @@ var app4 = new Vue({
     ]
   }
 });
+
+var data = {message: ""};
+
+var app5 = new Vue({
+  el: '#app5',
+  data: data
+});
+
+var app6 = new Vue({
+  el: '#app6',
+  data: data
+});

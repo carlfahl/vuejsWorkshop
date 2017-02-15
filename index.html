@@ -25,6 +25,7 @@
       </div>
       <div id="app2">
         <h3  v-if="show" id="myHead">Does this heading show.</h3>
+        <h3  v-else>Then This one shows</h3>
         <button class='btn btn-primary' id="showBtn" v-on:click="show = show? false: true">Toggle Heading</button>
       </div>
       <div id="app3">
@@ -39,6 +40,16 @@
             <li>{{fish.type}}</li>
           </ul>
         </div>
+      </div>
+      <div id="app5">
+        <form>
+          <input type="text" v-model="message">
+        </form>
+        <span>The message is: {{message}}</span>
+      </div>
+
+      <div id="app6">
+        <span>The text entered in app5: {{message}}</span>
       </div>
 
     </div>
